@@ -91,8 +91,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         marker.remove();
         return false;
     }
-
-    public void geocode() {
+     public void geocode() {
         Geocoder geocoder = new Geocoder(this);
         try {
             List<Address> direcciones = geocoder.getFromLocationName("London", 1);
